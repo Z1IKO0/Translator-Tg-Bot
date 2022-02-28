@@ -7,11 +7,11 @@ from pyrogram.types import (
     InlineKeyboardMarkup
 )
 from googletrans import Translator
-TOKEN = os.environ.get("TOKEN", "")
+TOKEN = os.environ.get("5132460755:AAEMJymkjBtIge_0mIPmbvXf6rnaw1Fr2_c", "")
 
-API_ID = int(os.environ.get("API_ID", 12345))
+API_ID = int(os.environ.get("15489557", 12345))
 
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("664cd79f58fbf1a07dd079d50df29845", "")
 app = Client(
         "Gtt",
         bot_token=TOKEN,api_hash=API_HASH,
@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],               [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]   ]  ) )
+	await message.reply_text(text =f"Salam **{message.from_user.first_name }** \n\n __Mən tərcümə botuyam \n Istədiyin mesajı istədiyin dilə çevirə bilərəm 🙂__",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Dəstək 🇦🇿" ,url="https://t.me/zikointime") ],               [InlineKeyboardButton("Təklif və Fikirlər", url="https://t.me/officialzbot") ]   ]  ) )
                   
 
 
@@ -56,11 +56,11 @@ async def echo(client, message):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton(" Next --->",callback_data = "page2")
+	[InlineKeyboardButton(" Sıradaki --->",callback_data = "page2")
 	]
 	] )
 	
- await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
+ await  message.reply_text("Dil seçin 👇",reply_to_message_id = message.message_id, reply_markup = keybord1) 
 
 
 @app.on_callback_query()
@@ -83,7 +83,7 @@ async def translate_text(bot,update):
        [InlineKeyboardButton("Xhosa",callback_data = "xh"),
        InlineKeyboardButton("Yiddish",callback_data = "yi"),
        InlineKeyboardButton("Yoruba",callback_data = "yo")],
-       [InlineKeyboardButton("<--- Back",callback_data = "page5")
+       [InlineKeyboardButton("<--- Geriyə",callback_data = "page5")
        
        ]
  ])
@@ -113,8 +113,8 @@ async def translate_text(bot,update):
          InlineKeyboardButton("Tatar",callback_data = "tt"),
          InlineKeyboardButton("Telugu",callback_data = "te")
          ],
-         [InlineKeyboardButton("<--- Back",callback_data = "page4"),
-         InlineKeyboardButton("Next --->",callback_data = "page6")
+         [InlineKeyboardButton("<--- Geriyə",callback_data = "page4"),
+         InlineKeyboardButton("Sıradaki --->",callback_data = "page6")
          ]  ])
    
  
@@ -143,8 +143,8 @@ async def translate_text(bot,update):
           InlineKeyboardButton("Russian",callback_data = "ru"),
           InlineKeyboardButton("Samoan",callback_data= "sm"),
           ],
-          [InlineKeyboardButton("<--- Back",callback_data = "page3"),
-          InlineKeyboardButton("Next --->",callback_data = "page5")
+          [InlineKeyboardButton("<--- Geriyə",callback_data = "page3"),
+          InlineKeyboardButton("Sıradakı --->",callback_data = "page5")
           ]
           
  
@@ -178,8 +178,8 @@ async def translate_text(bot,update):
                 InlineKeyboardButton("Malagasy",callback_data ="mg"),
                 InlineKeyboardButton("Malay",callback_data ="ms")
                 ],
-                [InlineKeyboardButton("<--- Back",callback_data = "page2"),
-                InlineKeyboardButton(" Next --->",callback_data = "page4")
+                [InlineKeyboardButton("<--- Geriyə",callback_data = "page2"),
+                InlineKeyboardButton(" Sıradaki --->",callback_data = "page4")
                 ]
               
  
@@ -213,7 +213,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton(" Next --->",callback_data = "page2")
+	[InlineKeyboardButton(" Sıradaki --->",callback_data = "page2")
 	]
 	] )
   
@@ -243,8 +243,8 @@ async def translate_text(bot,update):
            InlineKeyboardButton("Indonesian",callback_data = "id"),
            InlineKeyboardButton("Irish",callback_data = "ga")
            ],
-           [InlineKeyboardButton("<--- Back",callback_data = "page1"),
-           InlineKeyboardButton(" Next --->",callback_data = "page3"),
+           [InlineKeyboardButton("<--- Geriyə",callback_data = "page1"),
+           InlineKeyboardButton(" Sıradaki --->",callback_data = "page3"),
            ]
             ])
 						
@@ -254,17 +254,17 @@ async def translate_text(bot,update):
   tr_text = update.message.reply_to_message.text
   cb_data = update.data
   if cb_data== "page2":
-  	await update.message.edit("Select language 👇",reply_markup = keybord2)
+  	await update.message.edit("Dil seçin 👇",reply_markup = keybord2)
   elif cb_data == "page1":
-  	await update.message.edit("Select language 👇",reply_markup =keybord1)
+  	await update.message.edit("Dil seçin 👇",reply_markup =keybord1)
   elif cb_data =="page3":
-  	await update.message.edit("Select language 👇",reply_markup =keybord3)
+  	await update.message.edit("Dil seçin 👇",reply_markup =keybord3)
   elif cb_data == "page4":
-  	await update.message.edit("Select language 👇",reply_markup =keybord4)
+  	await update.message.edit("Dil seçin 👇",reply_markup =keybord4)
   elif cb_data =="page5":
-  	await update.message.edit("Select language 👇",reply_markup =keybord5)
+  	await update.message.edit("Dil seçin 👇",reply_markup =keybord5)
   elif cb_data =="page6":
-  	await update.message.edit("Select language 👇",reply_markup =keybord6)
+  	await update.message.edit("Dil seçin 👇",reply_markup =keybord6)
   else :
        translator = Translator()  
        translation = translator.translate(tr_text,dest=cb_data) 
