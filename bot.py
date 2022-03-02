@@ -87,7 +87,7 @@
  ​       ​InlineKeyboardButton​(​"Yəhudi dili"​,​callback_data​ ​=​ ​"yi"​), 
  ​       ​InlineKeyboardButton​(​"Yoruba dili"​,​callback_data​ ​=​ ​"yo"​) 
  ​       ], 
- ​       [​InlineKeyboardButton​(​"Burada sizin reklamınız ola bilər ✔ "​ ,​url​=​"https://t.me/epic   "​) 
+ ​       [​InlineKeyboardButton​(​"Burada sizin reklamınız ola bilər ✔ "​ ,​url​=​"https://t.me/zikointime"​) 
  ​       ], 
  ​       [​InlineKeyboardButton​(​" ««« Geri"​,​callback_data​ ​=​ ​"page5"​) 
  ​        
@@ -219,7 +219,7 @@
  ​        ​InlineKeyboardButton​(​"İtalyanca"​,​callback_data​ ​=​ ​"it"​), 
  ​        ​InlineKeyboardButton​(​"Ukraynaca"​,​callback_data​ ​=​ ​"uk"​),          
  ​        ], 
- ​        [​InlineKeyboardButton​(​"Burada sizin reklamınız ola bilər ✔"​ ,​url​=​"https://t.me/epicreklam"​) 
+ ​        [​InlineKeyboardButton​(​"Burada sizin reklamınız ola bilər ✔"​ ,​url​=​"https://t.me/zikointime"​) 
  ​        ], 
  ​        [​InlineKeyboardButton​(​" Növbəti »»»"​,​callback_data​ ​=​ ​"page2"​) 
  ​        ] 
